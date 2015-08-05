@@ -1,0 +1,20 @@
+load recvstalkmini.mat
+rand('seed',3.2);
+
+perc = 1;
+X=full(trdata);
+Y=trlabel;
+[numberOfSamples , numberOfColumns ] = size(X);
+randIndices = randperm(numberOfSamples);    % Shuffling of indexes 
+X=X(randIndices,:);                         %Used to get new random training and test sample everytime
+Y=Y(randIndices,:);
+m=floor((numberOfSamples*perc)/100);
+n=floor((numberOfSamples*perc)/100);
+TdX = X(1:m,:);
+TdY = Y(1:m,:);
+TsX = X(m+1:m+n,:);
+TsY = Y(m+1:m+n,:);
+sX = X(m+n+1:numberOfSamples,:);
+sY = Y(m+n+1:numberOfSamples,:);
+[model, beta] = TrAdaboostTrain(TdX,TdY,TsX,TsY,sX,sY);
+[HsY accuracy] = 

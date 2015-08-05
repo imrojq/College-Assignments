@@ -1,0 +1,2 @@
+ img = imread ('Samples\cat.bmp');
+ img2 = imread('Samples\dog.bmp');

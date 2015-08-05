@@ -1,0 +1,25 @@
+1.FCFS (First come First Serve)
+The Average waiting time for  FCFS (First come First Serve) is 1468.833333 
+The Average turnaround time for  FCFS (First come First Serve) is 1981.833333 
+
+
+2.SRTF (Shortest Remaining Time first) 
+The Average waiting time for  SRTF (Shortest Remaining Time first) is 773.000000 
+The Average turnaround time for  SRTF (Shortest Remaining Time first) is 1286.000000 
+
+
+3.Round Robin:
+
+
+The Average waiting time for   RR (Round Robin)  with quantum value 50 is 861.166667 
+The Average turnaround time for   RR (Round Robin)  with quantum value 50 is 1374.166667 
+
+
+The Average waiting time for   RR (Round Robin)  with quantum value 100 is 894.500000 
+The Average turnaround time for   RR (Round Robin)  with quantum value 100 is 1407.500000 
+
+
+The Average waiting time for   RR (Round Robin)  with quantum value 500 is 1244.500000 
+The Average turnaround time for   RR (Round Robin)  with quantum value 500 is 1757.500000 
+
+
